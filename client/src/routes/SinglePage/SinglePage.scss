@@ -1,0 +1,217 @@
+@import  "../../scss/responsive.scss";
+
+.SinglePage {
+  display: flex;
+  height: 100%;
+
+  @include md{
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .details {
+    flex: 3;
+    height: 100%;
+    overflow-y: scroll;
+
+    @include md{
+      flex: none;
+      height: max-content;
+      margin-bottom: 30px;
+    }
+
+
+    .wrapper {
+      padding-right: 30px;
+      @include sm{
+        padding: 0;
+      }
+
+      .info{
+        margin-top: 50px;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            .post{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                  
+                    font-weight: 400;
+                }
+                .address{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    color: #888;
+                    font-size: 14px;
+                    img{
+                        width: 19px;
+                        height: 19px;
+                    }
+
+                }
+                .price{
+                    padding: 5px;
+                    background-color: #FCE54D;
+                    border-radius: 5px;
+                    width: max-content;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+            .user{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 0px 50px;
+                border-radius: 5px;
+                background-color: rgba(255, 183, 155, 0.671);
+                img{
+                   width: 50px; 
+                   height: 50px;
+                   border-radius: 50%;
+                   object-fit: cover;
+                }
+            }
+            
+        }
+        .bottom{
+            margin-top: 50px;
+            color: #555;
+            line-height: 20px;
+        }
+
+        .buttons{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          button{
+            padding: 12px 24px;
+            background-color: #fece51;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .features {
+    flex: 2;
+    background-color: rgb(255, 230, 230);
+    height: 100%;
+    overflow-y: scroll;
+
+    @include md{
+      flex: none;
+      height: max-content;
+      margin-bottom: 50px;
+    }
+
+
+
+    .wrapper {
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img{
+        width: 24px;
+        height: 24px;
+      }
+      .title{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .feature{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+          background-color: #fffddfa6;
+        }
+
+        .featureText{
+          span{
+            font-weight: bold;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+
+      }
+
+      .listVertical{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .listHorizontal{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .sizes{
+        display: flex;
+        justify-content: space-between;
+
+        @include lg{
+          font-size: 12px;
+        }
+
+        .size{
+         display: flex;
+         align-items: center;
+        gap: 10px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+       }
+      }
+      .mapContainer{
+        width: 100%;
+        height: 200px;
+        
+        
+      }
+      .buttons{
+        display: flex;
+        justify-content: space-between;
+        button{
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: white;
+          border: 1px solid #b6b6b6af;
+          border-radius: 10px;
+          cursor: pointer;
+          img{
+            width: 16px;
+            height: 16px;
+          }
+
+        }
+
+      }
+
+    }
+  }
+}
