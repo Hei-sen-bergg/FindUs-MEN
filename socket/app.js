@@ -1,8 +1,11 @@
 import { Server } from "socket.io";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const io = new Server({
   cors: {
-    origin: "http://localhost:5173",
+    origin: process.env.CORS_ORIGIN,
   },
 });
 
@@ -49,5 +52,6 @@ io.on("connection", (socket) => {
   });
 });
 
-io.listen("4000");
-console.log("Socket server listening on port 4000");
+const port = process.env.SOCKET_PORT || 4000;
+io.listen(port);
+console.log(`Socket server listening on port ${port}`);

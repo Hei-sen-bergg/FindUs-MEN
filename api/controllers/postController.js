@@ -14,6 +14,9 @@ export const getPosts = async (req, res) => {
           gte: parseInt(query.minPrice) || undefined,
           lte: parseInt(query.maxPrice) || undefined,
         },
+      },
+      orderBy:{
+         createdAt: 'desc'
       }
     });
 

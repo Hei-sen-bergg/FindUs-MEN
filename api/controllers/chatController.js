@@ -10,6 +10,9 @@ export const getChats = async (req, res) => {
           hasSome: [tokenUserId],
         },
       },
+      orderBy:{
+        createdAt: 'desc'
+     }
     });
 
     for (const chat of chats) {
