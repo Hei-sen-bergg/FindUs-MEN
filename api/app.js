@@ -1,7 +1,7 @@
 import express from "express";
-import postRoute  from "./routes/post.js";
-import authRoute  from "./routes/auth.js";
-import dotenv from 'dotenv';
+import postRoute from "./routes/post.js";
+import authRoute from "./routes/auth.js";
+import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import testRoute from "./routes/test.js";
@@ -12,10 +12,9 @@ import messageRoutes from "./routes/message.js";
 const app = express();
 dotenv.config();
 
-
-app.use(cors({origin:process.env.CLIENT_URL, credentials:true}))
-app.use(express.json())
-app.use(cookieParser())
+app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/posts", postRoute);
 app.use("/api/auth", authRoute);
