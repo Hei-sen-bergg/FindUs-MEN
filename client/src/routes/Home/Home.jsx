@@ -13,7 +13,7 @@ const Home = () => {
   return (
  <div>
     <div className='homePage'>
-      <div className="imgContainer"><img src="bg.png" alt="" /></div>
+      <div className="imgContainer"><img src="background.jpg" alt="" /></div>
       <div className="textContainer"><h1 className='title'>And finally you found us...</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
