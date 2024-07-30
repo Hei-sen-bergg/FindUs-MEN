@@ -16,11 +16,13 @@ const Home = () => {
       <div className="imgContainer"><img src="background.jpg" alt="" /></div>
       <div className="textContainer"><h1 className='title'>And finally you found us...</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Distinctio aut nam, et possimus architecto consequuntur, 
-        facere, deleniti ducimus tempore praesentium consequatur? 
-        Blanditiis incidunt omnis autem vel doloribus. Corrupti, 
-        provident consequatur?
+      Welcome to FindUs, the premier platform for travelers seeking budget-friendly accommodations. 
+      Whether you're a solo adventurer or traveling with a group, FindUs connects you with affordable
+      lodging options that suit your needs.
+       Our community-driven approach allows users to both find and offer places to stay, fostering connections 
+       between travelers and hosts. With easy search filters, secure communication, and a commitment to making 
+       travel more accessible, FindUs is your go-to resource for finding comfortable and economical accommodations.
+       Join our community today and start your journey with FindUs.
       </p>
         <SearchBar />
       <div className="boxes">
